@@ -4,7 +4,14 @@
   <url>
     <loc>https://amlyt.top/posts/1.html</loc>
     
-    <lastmod>2022-04-12</lastmod>
+    <lastmod>2022-04-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://amlyt.top/about/index.html</loc>
+    
+    <lastmod>2022-04-18</lastmod>
     
   </url>
   
@@ -58,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://amlyt.top/about/index.html</loc>
-    
-    <lastmod>2021-08-02</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://amlyt.top/link/index.html</loc>
     
     <lastmod>2021-07-27</lastmod>
@@ -102,7 +102,7 @@
 
   <url>
     <loc>https://amlyt.top/</loc>
-    <lastmod>2022-04-15</lastmod>
+    <lastmod>2022-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,7 +110,7 @@
   
   <url>
     <loc>https://amlyt.top/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-04-15</lastmod>
+    <lastmod>2022-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -118,22 +118,29 @@
 
   
   <url>
-    <loc>https://amlyt.top/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2022-04-15</lastmod>
+    <loc>https://amlyt.top/categories/%E5%B0%8F%E8%BF%AA/</loc>
+    <lastmod>2022-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://amlyt.top/categories/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-04-15</lastmod>
+    <lastmod>2022-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://amlyt.top/categories/%E5%B0%8F%E8%BF%AA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2022-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://amlyt.top/categories/%E6%83%B3%E6%B3%95/%E8%90%A8%E8%8A%AC/</loc>
-    <lastmod>2022-04-15</lastmod>
+    <lastmod>2022-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
