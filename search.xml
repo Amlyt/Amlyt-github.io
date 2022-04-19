@@ -4,9 +4,22 @@
   
     
     <entry>
+      <title></title>
+      <link href="/posts/0.html"/>
+      <url>/posts/0.html</url>
+      
+        <content type="html"><![CDATA[<p>555555</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第三课</title>
-      <link href="/posts/1.html"/>
-      <url>/posts/1.html</url>
+      <link href="/posts/5a33ef10.html"/>
+      <url>/posts/5a33ef10.html</url>
       
         <content type="html"><![CDATA[<h1 id="第三课"><a href="#第三课" class="headerlink" title="第三课"></a>第三课</h1><h3 id="Fiddler"><a href="#Fiddler" class="headerlink" title="Fiddler:"></a>Fiddler:</h3><p>是一个http协议调试代理工具，它能够记录并检查你的电脑和互联网之间的http通讯，设置断点。</p><h3 id="Charles"><a href="#Charles" class="headerlink" title="Charles:"></a>Charles:</h3><p>是一个http代理服务器，http监视器，反转代理服务器。</p><h3 id="TcpDump"><a href="#TcpDump" class="headerlink" title="TcpDump:"></a>TcpDump:</h3><p>是可以将网络中传送的数据包完全截获下来提供分析。它支持对网络层，协议，网络或端口的过滤，并提供and,or,not逻辑语句来帮助你去掉无用的信息。</p><h3 id="BurpSuite"><a href="#BurpSuite" class="headerlink" title="BurpSuite:"></a>BurpSuite:</h3><p>是用于攻击web应用程序的继承平台，包含了许多工具，许多接口，所有工具都能共享一个请求。</p><h3 id="Wireshark"><a href="#Wireshark" class="headerlink" title="Wireshark:"></a>Wireshark:</h3><p>是一个网络封包分析软件，功能是截取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark使用WinPCAP作为接口，直接与网卡进行数据报文交换。基本所有协议都能抓到</p><h3 id="科来网络分析系统："><a href="#科来网络分析系统：" class="headerlink" title="科来网络分析系统："></a>科来网络分析系统：</h3><p>拥有全部知识产品的网络分析产品。该系统具有行业领先的专家分析技术，通过捕获分析网络中传输的底层数据包，对网络故障，网络安全以及网络性能进行全面分析，从而排查网络中出现或潜在的故障，安全及性能问题。</p><h3 id="WPE-amp-封包分析"><a href="#WPE-amp-封包分析" class="headerlink" title="WPE&amp;封包分析:"></a>WPE&amp;封包分析:</h3><p>强大的网络封包编辑器，wpe可以截取网络上的信息，修改封包软件，是外挂制作的常用工具，一般在安全测试中可用俩调试数据通讯地址。</p>]]></content>
       
@@ -26,8 +39,8 @@
     
     <entry>
       <title>第二课</title>
-      <link href="/posts/1.html"/>
-      <url>/posts/1.html</url>
+      <link href="/posts/172d4c42.html"/>
+      <url>/posts/172d4c42.html</url>
       
         <content type="html"><![CDATA[<h1 id="第二课"><a href="#第二课" class="headerlink" title="第二课"></a>第二课</h1>]]></content>
       
