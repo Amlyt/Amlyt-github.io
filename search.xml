@@ -4,12 +4,41 @@
   
     
     <entry>
-      <title></title>
-      <link href="/posts/0.html"/>
-      <url>/posts/0.html</url>
+      <title>第一章</title>
+      <link href="/posts/9dece749.html"/>
+      <url>/posts/9dece749.html</url>
       
-        <content type="html"><![CDATA[<p>555555</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>为了锻炼自己看书的习惯，和看书抓重点的能力，也为了自己日后复习，特地写下学习笔记以便自己查看，也欢迎各位来共同学习和交流。</p><p>参考书籍：《计算机网络自顶向下方法》原书第七版</p><p>参考博客:<a href="https://www.cnblogs.com/CharlesLC/p/15227875.html">计算机网络自顶向下方法(一)——计算机网络和因特网 - CharlesLC - 博客园 (cnblogs.com)</a></p><h1 id="什么是因特网"><a href="#什么是因特网" class="headerlink" title="什么是因特网"></a>什么是因特网</h1><p>因特网是一个世界范围的计算机网络，即它是一个互联了遍及全世界计算设备的网络。</p><h2 id="因特网具体构成及描述"><a href="#因特网具体构成及描述" class="headerlink" title="因特网具体构成及描述"></a>因特网具体构成及描述</h2><p>所有使用网络的计算设备都称为<strong>主机</strong>(host)或<strong>端系统</strong>(end system)。</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421125628398.png"></p><p>主机通过<strong>通信链路</strong>(communication link)和<strong>分组交换机</strong>(packet switch)连接到一起。</p><p><strong>通信链路</strong>:</p><ul><li>同轴电缆，铜线，光纤，无限电频谱…..</li><li>链路的<strong>传输速率(transmit rate)</strong>=<strong>比特/秒(bit/s,或bps)</strong></li></ul><p><strong>分组:</strong></p><p>当一台主机向另一台主机发送数据时，发送主机将数据分段，并将每段数据加上首部字节,这叫<strong>分组</strong>(packet)。</p><p>这些分组发送到目的地主机，被装配成初始数据。</p><p><strong>分组交换机:</strong> 转发分组</p><ul><li><strong>路由器(router)</strong>:网络核心中</li><li><strong>链路层交换机(link-layer switch)</strong>:接入网中</li></ul><p>主机通过<strong>因特网服务商接</strong>(ISP)入因特网</p><h2 id="从服务角度来描述因特网"><a href="#从服务角度来描述因特网" class="headerlink" title="从服务角度来描述因特网"></a>从服务角度来描述因特网</h2><p><strong>分布式应用程序:</strong></p><p>涉及多个交换交互数据的主机，例如WEB、Voip、email、分布式游戏、电子商务、社交网络…</p><p>因特网应用程序运行在主机上，但并不运行在路由器中，路由器并不在意应用程序，这时套接字接口可以进行交付数据。</p><p><strong>套接字接口(socket interface):</strong></p><p>该接口规定了运行在主机的程序请求因特网的基础设施向运行在另一个主机的特定目的地程序交付数据的方式。</p><h2 id="什么是协议"><a href="#什么是协议" class="headerlink" title="什么是协议?"></a>什么是协议?</h2><p><strong>协议</strong>:控制因特网中信息的接受与发送</p><p>协议(protocol)定义了在两个或多个通信实体之间交换的报文的格式和顺 序，以及报文发送和/或接收一条报文或其他事件所采取的动作。</p><p>计算机中的协议，例如:HTTP,TCP/IP,FTP,SMTP,PPP</p><p>假设用人类协议来说明:</p><p>双方都遵循协议的情况下,几点了?发送请求(respect),2:00 对方回应(response)</p><p>计算机的协议并非人类之间的协议:</p><p>Internet中所有通信行为都受协议制约。</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421133434437.png"></p><h1 id="网络边缘"><a href="#网络边缘" class="headerlink" title="网络边缘:"></a>网络边缘:</h1><p>因为计算设备位于因特网的边缘，故而被称为端系统。</p><p>端系统也称为主机（host）,因为它们容纳（即运行）应用程序</p><p><strong>应用程序:</strong></p><p>如Web浏览器程序、Web服务器程序、电子右键客户程序或电子右键服务器程序……</p><p><strong>主机：</strong></p><ul><li><p>客户机(client)、服务器(server)</p></li><li><p>客户机通常是桌面PC、移动PC和智能手机</p></li><li><p>服务器通常是更为强大的机器、用于存储和发布Web页面、流视频、中继电子右键等。</p></li></ul><h2 id="接入网"><a href="#接入网" class="headerlink" title="接入网:"></a>接入网:</h2><p>接入网是指将主机物理连接到边缘路由器(edge router)的网络。</p><p><strong>边缘路由器:</strong></p><p>将主机连接到任何其他主机的第一台路由器。</p><p><strong>家庭接入：DSL、电缆、FTTH、拨号和卫星。</strong></p><ul><li>宽带住宅接入两种流行的类型:数字用户线(DSL,Digital Subscriber Line)、电缆。</li></ul><p><strong>DSL:</strong></p><p><strong>DSL-电话公司的的基础设施</strong>，此时当使用DSL时，用户的本地电话公司也是它的ISP。</p><p>每个用户的<strong>DSL调制解调器</strong>使用现有的电话线(双铜绞线)与本地中心局(CO)中的<strong>数字用户接入线复用器</strong>(DSLAM)交换数据。</p><p>家庭的调制解调器收到数字数据转化为模拟信号，在DSLAM处转化为数字形式。</p><p>调制解调器把数据信号和电话信号分开，用户一方将数据信号发送给调制解调器，电话公司一方将数据信号发送给因特网。</p><p>DSL定义了多个不同的传输速率，上行传输速率小于下行。</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220422095449325.png"></p><p>目前常见的DSL有两种形式：</p><p><strong>SDSL</strong>：</p><ul><li>对称数字用户线路（SDSL）的上传速度和下载速度相同</li></ul><p><strong>ADSL</strong>:</p><ul><li>非对称数字用户线路（ADSL）的下载速度高于上传速度。</li><li>ADSL较SDSL更经济。ADSL从某种意义上说,是为家庭用户设计的。</li></ul><p>除此之外还有其他很多种DSL，以及新兴的VDSL，是非对称数字用户线路最快的，与以太网结合，让宽带客户体验到了速度快的宽带接入方式，可自行下去了解，这里不多作说明。</p><p><strong>电缆因特网:</strong></p><ul><li><strong>电缆因特网(CIA,cable Internet access)-有线电视公司的电视基础设施。</strong></li></ul>]]></content>
       
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+          <category> 计算机网络在自顶向下 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一节</title>
+      <link href="/posts/e0a70cfa.html"/>
+      <url>/posts/e0a70cfa.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议:"></a>PPP协议:</h1><p>PPP是 Point-to-Point Protocol的简称，也叫做P2P，目前是TCP/IP网络中最重要的点到点数据链路层协议。</p><p>主要包括链路控制协议（LCP）和网络控制协议（NCP）。</p><h2 id="LCP：链路控制协议-Link-Control-Protocol"><a href="#LCP：链路控制协议-Link-Control-Protocol" class="headerlink" title="LCP：链路控制协议(Link Control Protocol)"></a>LCP：链路控制协议(Link Control Protocol)</h2><p>用于建立，配置和检测数据链路连接的连接控制协议。</p><p>主要用于数据链路连接的建立、拆除和监控；LCP主要完成MRU（最大传输单元）、质量协议、验证协议、魔术字、协议域压缩、地址和控制域压缩协商等参数的协商；</p><h2 id="NCP-网络层控制协议-Network-Control-Protocol"><a href="#NCP-网络层控制协议-Network-Control-Protocol" class="headerlink" title="NCP:网络层控制协议(Network Control Protocol)"></a>NCP:网络层控制协议(Network Control Protocol)</h2><p>对于IPv4，NCP被称为IP控制协议（IPCP） 对于IPv6，NCP被称为IPV6CP。</p><p>在LCP完成链路建立和认证之后，该链路每端都进入网络状态，并使用一个或者多个NCP进行网络层的相关协商。</p><p>NCP用于建立和配置不同网络层协议的网络控制协议协议簇，主要用于协商在该链路上所传输的数据包的格式与类型。</p><p><strong>PPP五种状态：</strong></p><p>Dead:(链路不可用阶段)</p><p>LCP状态机有两个状态：Initial和Starting。从这个状态迁移到Establish状态会给LCP状态机送一个Up事件。当断开连接后，链路会自动的回到这个状态。在一般情况下这个阶段是很短的，仅仅只是检测到设备在线。<img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420220807999.png" alt="image-20220420220807999"></p><p>(change status to up)现在是up状态</p><p>Establish:(链路建立阶段)</p><p>该阶段PPP链路将进行LCP参数协商，协商内容包括最大接收单元MRU、认证方式、魔术字（Magic Number）等选项。LCP参数协商成功后会进入Opened状态，表示底层链路已经建立。</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420221048913.png" alt="image-20220420221048913"></p><p>Authenticate:(验证阶段):</p><p>某些链路可能要求对端验证自己之后才允许网络层协议数据包在链路上传输，在默认值中验证是不要求的。如果某个应用要求对端采用特定的验证协议进行验证，则必须在链路建立阶段发出使用这种协议的请求。只有当验证通过时才可以进入网络层协议阶段，如果验证不通过，则应继续验证而不是转到链路终止阶段。在这个阶段只允许链路控制协议、验证协议和链路质量检测的数据包进行传输，其他的数据报都应丢弃。</p><p>LCP这四次便是验证阶段。</p><p>Network-Layer Protocol（网络层协议阶段）:<br>该阶段PPP链路将进行NCP协商。通过协商来选择和配置一个网络层协议及相关参数。只有相应的网络层协议协商成功后，才可以通过这条PPP链路发送报文。NCP协商成功后，PPP链路将保持通信状态。</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420221357389.png" alt="image-20220420221357389"></p><p>Link Terminate（链路终止阶段):</p><p>这里没试验，回去可自己试验。</p><p><strong>PPP的层次模型：</strong></p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/1044665-20171224140546506-2015622442.png" alt="img"></p><p><strong>关于PPP的帧格式：</strong></p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/1044665-20171224140409396-1066760722.png" alt="img"></p><p>LCP帧格式</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/1044665-20171224140611146-2086115022.png" alt="img"></p><p><strong>关于PPP帧格式的介绍</strong></p><ul><li><p>标志字段F=0x7E（01111110），定界符</p><p>如果0x7E出现在帧内部的话，需要出现问题，所以有两种解决方案：</p><ul><li>在异步链路上使用字符填充，即把0x7E用0x7D5E替换</li><li>在同步链路上使用位填充，即在连续的5个1之后填充一个0</li></ul></li><li><p>地址字段A：用于指定那个站正在处理，但是PPP只关心一个站，所以设置了0xFF（所有站）</p></li><li><p>控制字段C：用于帧序列和重传行为，PPP中没有用，设为固定值0x03</p></li><li><p>协议（指示在信息字段中封装的数据类型）：</p><ul><li>0x0021时，数据部分是IP数据报。</li><li>0xC021时,数据部分是LCP数据（链路控制协议）。</li><li><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420214700228.png" alt="image-20220420214700228"></li><li>0x8021时，数据部分是NCP（网络控制协议）数据。</li><li><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420214723580.png" alt="image-20220420214723580"></li><li>0xC023 时，数据部分是PAP数据。</li><li>0xC025时： LCP中链路质量报告LQR</li><li>0xC223 时，数据部分是CHAP数据</li></ul></li><li><p>数据部分 最大长度不能超过1500字节，1500字节大小等于PPP协议中配置参数选项MRU</p></li><li><p>FCS（校验）: 用于差错检测的冗余循环校验码</p></li></ul><p><strong>作业1：抓取MRU,Magic Number:</strong></p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220420221048913.png" alt="image-20220420221048913"></p><p><strong>代码如下：</strong></p><p>对两个路由器进行配置</p><p>R1：</p><p>sy     #进入系统试图</p><p>sy R1  #更改路由名称为R1</p><p>interface serial 0/0/1   #进入S0/0/1接口<br>ip address 10.10.10.1 24 #配置ip地址 A类掩码为24,B类,16，C类，8<br>link-protocol ppp  #串口使用ppp协议。</p><p>R2:</p><p>sy    #进入系统试图</p><p>sy R2  #更改路由名称为R2</p><p>interface serial 0/0/1  #进入S0/0/2接口<br>ip address 10.10.10.2 24<br>link-protocol ppp</p><p>查看路由表：</p><p>dis ip routing-table</p><p>路由表是(routing-table)</p><p>查看接口就是:</p><p>dis int s0/0/1</p><p><strong>作业二2：为什么确认两次还要IPCP确认两次？</strong></p><p><a href="https://www.cnblogs.com/CharlesLC/p/15227875.html">计算机网络自顶向下方法(一)——计算机网络和因特网 - CharlesLC - 博客园 (cnblogs.com)</a></p><p>　IP控制协议（IPCP）负责建立，使能和中止IP模块。IPCP和LCP协议使用相同的包交换机制。IPCP包在PPP没有达到网络层协议阶段以前不能进行交换，如果有IPCP包在到达此阶段前到达会被抛弃。IPCP和LCP基本相同，除了以下几点：<br>　　数据链路层协议域方面。一个IPCP包被包括在PPP数据链路层帧的信息域内，在帧中的协议域会有指示类型的数值8021。编码域仅用到编码1到7。其它编码被认为是不可识别而被抛弃。超时方面。IPCP包在PPP没有到达网络层协议以前不能交换。在实现中应该在未接收到配置确认或其它响应前准备等待认证和链接质量决定的完成。实现中应该保证连接在除用户干扰或超的其它情况下不得中断。配置选项类型方面。IPCP有不同的配置选项集合，在下面会具体谈到。<br>　　2.1. 发送IP数据报<br>　　在进行IP包通信前，PPP必须达到网络层协议阶段，IPCP必须到达打开状态。在PPP数据链路层帧的信息域中包括了一个IP包，帧中的协议域指示了类型值0021。在PPP连接上传送IP包的最大长度和PPP数据链种层帧的信息域的最大长度一致。过大的IP数据报必须被重新分段。如果系统不希望分段重组就必须使用TCP最大段大小选项和MTU发现。</p><h2 id="PPP两种认证方式"><a href="#PPP两种认证方式" class="headerlink" title="PPP两种认证方式:"></a>PPP两种认证方式:</h2><h5 id="PAP"><a href="#PAP" class="headerlink" title="PAP:"></a>PAP:</h5><p>一端发送明文口令至对等端，由对方认证，特性:铭文传输，不安全。</p><p>PAP包格式</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421102312973.png" alt="image-20220421102312973"></p><h5 id="CHAP"><a href="#CHAP" class="headerlink" title="CHAP:"></a>CHAP:</h5><p>双方都把随机数+密码通过散列函数来运算，所以网络上只会看到杂凑的函数种类及随机数，不会看到密码，安全性很高。</p><p>CHAP认证过程</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421102352663.png" alt="image-20220421102352663"></p><p>CHAP包格式</p><p> <img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421102657733.png" alt="image-20220421102657733"></p><p>CHAP认证过程报文交换过程</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421102848946.png" alt="image-20220421102848946"></p><h2 id="PPPOE协议"><a href="#PPPOE协议" class="headerlink" title="PPPOE协议"></a>PPPOE协议</h2><p>PPP 协议要求进行通信的双方之间是点到点的关系，不适于广播型的以太网和另外一些多点访问型的网络，于是就产生了PPPOE协议。PPPOE不仅为使用桥接以太网接入的用户提供了一种宽带接入手段，同时还能提供方便的接入控制和计费</p><p>PPPoE报文</p><p><img src="https://cdn.jsdelivr.net/gh/AMLYT/blogImages@master/posts/image-20220421102929753.png" alt="image-20220421102929753"></p><ul><li>VER：固定为1；</li><li>TYPE：固定为1；</li><li>CODE：<ul><li>发现阶段：<ul><li>0x09 PADI：PPPOE Active Discovery Initiation</li><li>0x07 PADO：PPPOE Active Discovery Offer</li><li>0x19 PADR：PPPOE Active Discovery Request</li><li>0x65 PADS:PAD Session-confirmation</li><li>0xa7 PADT:PPPOE Active Discovery Terminate</li></ul></li><li>会话阶段： 0x00 Session ID：PPP会话的唯一标识。</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 路由交换 </category>
+          
+          <category> 广域网技术 </category>
+          
+      </categories>
       
       
     </entry>
@@ -26,9 +55,9 @@
       
       <categories>
           
-          <category> 小迪 </category>
-          
           <category> 网络安全 </category>
+          
+          <category> 小迪 </category>
           
       </categories>
       
@@ -47,9 +76,9 @@
       
       <categories>
           
-          <category> 小迪 </category>
-          
           <category> 网络安全 </category>
+          
+          <category> 小迪 </category>
           
       </categories>
       
@@ -68,9 +97,9 @@
       
       <categories>
           
-          <category> 小迪 </category>
-          
           <category> 网络安全 </category>
+          
+          <category> 小迪 </category>
           
       </categories>
       
